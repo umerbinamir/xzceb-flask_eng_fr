@@ -35,8 +35,8 @@ def englishToFrench(english_text):
 def frenchToEnglish(french_text):
     translation_result = language_translator.translate(
     text=french_text,
-    source=SOURCE_LANG,
-    target=TARGET_LANG
+    source=TARGET_LANG,
+    target=SOURCE_LANG
     ).get_result()
     english_text = translation_result['translations'][0]['translation']
     return english_text
